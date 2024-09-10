@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cafe</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .nav {
+            background-color: rgb(1, 12, 12);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            position: fixed;
+            width: 65px;
+            z-index: 11111;
+        }
+
+        .nav>div {
+            padding: 0 5px 0 5px;
+        }
+
+        .nav>div>a:hover {
+            text-align: center;
+            background-color: goldenrod;
+            border-radius: 5px;
+            padding: 10vh 5px 10vh 5px;
+            width: 50px;
+            color: white;
+
+        }
+
+        .main {
+            position: relative;
+            left: 5.1%;
+            width: calc(100% - 5.1%);
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        a:visited {
+            color: white;
+        }
+
+        .img-fluid {
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+        }
+
+        .title {
+            position: relative;
+            top: -27rem;
+            font-size: 10rem;
+            text-align: center;
+            color: white;
+        }
+
+        .imageSpace {
+            height: 32rem;
+        }
+
+        .formSpace {
+            display: flex;
+            justify-content: center;
+        }
+
+        .p-rl {
+            padding: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="nav">
+            <div><a href="#home"> Home </a></div>
+            <div><a href="#about"> About </a></div>
+            <div><a href="#menu"> Menu </a></div>
+            <div><a href="#where"> Where </a></div>
+        </div>
+        <div class="main">
+            <div id="home">
+                <div class="imageSpace">
+                    <img src="./Images/shop.jpg" class="img-fluid" alt="image desc" />
+                    <h1 class="title">The Cafe</h1>
+                </div>
+            </div> <br>
+            <div class="p-rl" id="about">
+                <h1 style="text-align: center;">About the cafe</h1><br>
+                <h3>The Cafe was founded in blabla by Mr. srikar in cafeteria in the usa,
+
+                    Welcome to [Latte love]!
+
+
+                    At [Latte love]! we believe that a café is more than just a place to grab a coffee—it's a space
+                    where great conversations happen,
+                    where you find inspiration, and where every sip and bite is a moment of joy.
+                    Nestled in the heart of [Location], our café offers a relaxing ambiance perfect for unwinding with
+                    friends,
+                    working on your next big project, or simply enjoying a quiet moment alone.
+
+                    Our menu is crafted to cater to a variety of tastes—from the finest brewed coffee to refreshing
+                    teas,
+                    delightful sandwiches, and indulgent desserts.
+                    Whether you're here for a morning pick-me-up or a casual afternoon snack, we take pride in serving
+                    freshly prepared,
+                    quality food with the utmost care and attention.
+
+                    Come by and enjoy the experience—because at [Your Café Name], every guest is a part of our story.
+                    </p>
+                    <h3>opening hours=5:30am-8:30pm</h3>
+                    <p>Address: 15 Adr street, 5015, NY</p>
+            </div> <br>
+            <div id="menu">
+                <img src="./Images/cup.jpg" class="img-fluid" alt="image desc" />
+                <div class="menuContent p-rl">
+                    <h2>MENU</h2>
+                    <p>
+                        Beverages
+                        Espresso - ₹80 <br>
+                        Cappuccino - ₹120<br>
+                        Latte - ₹130<br>
+                        Americano - ₹100<br>
+                        Iced Coffee - ₹140<br>
+                        Hot Chocolate - ₹150<br>
+                        Green Tea - ₹90<br>
+                        Fresh Juice (Orange/Apple/Carrot) - ₹110<br>
+                    <h2>spicy</h2><br>
+                    Classic Veg Sandwich - ₹150<br>
+                    Grilled Cheese Sandwich - ₹170<br>
+                    Chicken Club Sandwich - ₹220<br>
+                    Paneer Tikka Sandwich - ₹190<br><br>
+                    <h2>salad's</h2><br>
+                    Caesar Salad - ₹180<br>
+                    Greek Salad - ₹160<br>
+                    Quinoa Salad - ₹200<br>
+                    Chicken Salad - ₹210<br>
+                    <h2>snack's</h2><br>
+                    Chocolate Brownie - ₹120<br>
+                    Blueberry Muffin - ₹90<br>
+                    Cheesecake - ₹180<br>
+                    Fruit Tart - ₹160V<br>
+                    Snacks<br>
+                    French Fries - ₹100<br>
+                    Garlic Bread - ₹90<br>
+                    Nachos with Salsa - ₹160<br>
+                    Veg Patties - ₹60</p>
+                    <div class="column">
+                        <div class="row" style="background-color:#94a16c;">
+                            <h2></h2>
+                            <p></p>
+                        </div>
+                        <div class="row" style="background-color:#a7ba92;">
+                            <h2></h2>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <br>
+            <div class="p-rl" id="where">
+                <h2>where to find us</h2>
+                <P>We offer full-service catering for any event, large or small.
+                    We understand your needs and we will cater the food to satisfy
+                    the biggerst criteria of them all, both look and taste.</P>
+
+
+
+                <h2>Reserve a Table</h2>
+                <p>Reserve a table, ask for today's special or just send us a message:</p>
+
+                <div class="formSpace">
+                    <form action="#" method="POST">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required> <br><br>
+                        <label for="people">How many people</label>
+                        <input type="number" id="people" name="people" placeholder="Enter number of people"
+                            required><br> <br>
+                        <label for="datetime">Reservation Date & Time</label>
+                        <input type="datetime-local" id="datetime" name="datetime" required> <br><br>
+                        <label for="message">Message / Special requirements</label>
+                        <textarea id="message" name="message" placeholder="Any special requests or message?"
+                            rows="4"></textarea> <br><br>
+                        <input type="submit" value="Send Message">
+                    </form>
+                </div>
+            </div> <br>
+        </div>
+    </div>
+</body>
+</html>
